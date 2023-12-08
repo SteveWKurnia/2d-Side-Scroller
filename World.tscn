@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://dlbhyxos38iba"]
+
+[ext_resource type="PackedScene" uid="uid://lhni7lw5l0c4" path="res://Player.tscn" id="1_k83l4"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_4i78r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_idi1f"]
+size = Vector2(1178.5, 367)
+
+[node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_k83l4")]
+position = Vector2(2, 72)
+JUMP_VELOCITY = -1000
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(2, 2)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_4i78r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(580.75, 472.5)
+shape = SubResource("RectangleShape2D_idi1f")
+
+[node name="Panel" type="Panel" parent="StaticBody2D"]
+offset_left = -8.0
+offset_top = 290.0
+offset_right = 1182.0
+offset_bottom = 678.0
