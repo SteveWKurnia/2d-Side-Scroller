@@ -1,7 +1,7 @@
 [gd_scene load_steps=35 format=3 uid="uid://lhni7lw5l0c4"]
 
-[ext_resource type="Script" path="res://Player.gd" id="1_2c3rf"]
-[ext_resource type="Texture2D" uid="uid://bcboi3hd4tsmk" path="res://oak_woods_v1.0/character/char_blue.png" id="1_spboa"]
+[ext_resource type="Script" path="res://player/Player.gd" id="1_2c3rf"]
+[ext_resource type="Texture2D" uid="uid://bcboi3hd4tsmk" path="res://resources/character/char_blue.png" id="1_spboa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qap1t"]
 atlas = ExtResource("1_spboa")
@@ -245,7 +245,7 @@ JUMP_VELOCITY = -400
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(29, 28)
 sprite_frames = SubResource("SpriteFrames_cmsup")
-animation = &"Fall"
+animation = &"Jump"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(28, 40)

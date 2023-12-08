@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcgb65p6kmbw0"
-path="res://.godot/imported/rock_2.png-d5c8d804f1b4b1fce9eac89e9e3accb7.ctex"
+uid="uid://dvj1f1so1qy2i"
+path="res://.godot/imported/shop_anim.png-a8bf764559fd9572a84f419fe0f56ef6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://oak_woods_v1.0/decorations/rock_2.png"
-dest_files=["res://.godot/imported/rock_2.png-d5c8d804f1b4b1fce9eac89e9e3accb7.ctex"]
+source_file="res://resources/decorations/shop_anim.png"
+dest_files=["res://.godot/imported/shop_anim.png-a8bf764559fd9572a84f419fe0f56ef6.ctex"]
 
 [params]
 

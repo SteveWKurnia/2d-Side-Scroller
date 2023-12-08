@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dobvawqc4rlec"
-path="res://.godot/imported/background_layer_3.png-1d3836219fad48d78b9819923dfa3de0.ctex"
+uid="uid://b7ga4gfijkghp"
+path="res://.godot/imported/background_layer_1.png-70dafea91cfa12b5349be025ff0158b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://oak_woods_v1.0/background/background_layer_3.png"
-dest_files=["res://.godot/imported/background_layer_3.png-1d3836219fad48d78b9819923dfa3de0.ctex"]
+source_file="res://resources/background/background_layer_1.png"
+dest_files=["res://.godot/imported/background_layer_1.png-70dafea91cfa12b5349be025ff0158b2.ctex"]
 
 [params]
 
