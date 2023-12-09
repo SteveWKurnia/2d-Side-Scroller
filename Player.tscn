@@ -1,7 +1,7 @@
-[gd_scene load_steps=35 format=3 uid="uid://lhni7lw5l0c4"]
+[gd_scene load_steps=35 format=3 uid="uid://bow76i78wm7dc"]
 
-[ext_resource type="Script" path="res://player/Player.gd" id="1_2c3rf"]
-[ext_resource type="Texture2D" uid="uid://bcboi3hd4tsmk" path="res://resources/character/char_blue.png" id="1_spboa"]
+[ext_resource type="Script" path="res://Player.gd" id="1_2c3rf"]
+[ext_resource type="Texture2D" path="res://oak_woods_v1.0/character/char_blue.png" id="1_spboa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qap1t"]
 atlas = ExtResource("1_spboa")
@@ -240,24 +240,13 @@ animations = [{
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_2c3rf")
-JUMP_VELOCITY = -400
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(316, 315)
-offset = Vector2(0, -100)
-zoom = Vector2(2, 2)
-limit_left = 0
-limit_top = 150
-limit_right = 1160
-limit_bottom = 1000
-editor_draw_limits = true
-editor_draw_drag_margin = true
+JUMP_VELOCITY = -100
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(285, 311)
+position = Vector2(29, 28)
 sprite_frames = SubResource("SpriteFrames_cmsup")
-animation = &"Jump"
+animation = &"Fall"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(284, 323)
+position = Vector2(28, 40)
 shape = SubResource("CapsuleShape2D_arkt4")
