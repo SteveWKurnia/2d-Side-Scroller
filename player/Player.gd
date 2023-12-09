@@ -8,7 +8,6 @@ var currY = 0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _physics_process(delta):
-	currY = velocity.y
 	
 	# Add the gravity.
 	if not is_on_floor():
@@ -23,6 +22,7 @@ func _physics_process(delta):
 	if velocity.y > currY && !is_on_floor():
 		$AnimatedSprite2D.play("Fall")
 	
+	currY = velocity.y
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
